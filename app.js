@@ -78,17 +78,6 @@ app.get("/posts/:postId", function (req, res) {
       content: post.content,
     });
   });
-
-  // posts.forEach(function (post) {
-  //   const storedTitle = _.lowerCase(post.title);
-
-  //   if (storedTitle === requestedTitle) {
-  //     res.render("post", {
-  //       title: post.title,
-  //       content: post.content,
-  //     });
-  //   }
-  // });
 });
 
 app.listen(3000, function () {
